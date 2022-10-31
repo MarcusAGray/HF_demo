@@ -8,7 +8,8 @@
 </head>
 <body>
   <h1>HF Demo</h1>
-  <input id="textInput" type="file">
+  <input id="textInput" type="text">
+  <button id="btn">Send text</button>
   <div id="results"></div>
   <script>
     
@@ -28,7 +29,8 @@
       reader.addEventListener('load', () => loaded(reader))
       // reader.readAsDataURL(textInput.files[0]);
     }
-    textInput.addEventListener('input', read);
+    // textInput.addEventListener('input', read);
+    btn.addEventListener('click', read)
 
   </script>
   
